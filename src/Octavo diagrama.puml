@@ -1,0 +1,25 @@
+@startuml
+
+left to right direction
+
+:Usuario: as u
+:Administrador: as a
+
+(Iniciar sesion) as UC1
+(Recuperar contraseña) as UC2
+(Modificar contraseña) as UC3
+(Cerrar sesion) as UC4
+(Registrar usuario) as UC5
+(Instalar programa) as UC6
+
+u -- UC1
+u -- UC2
+u -- UC3
+u -- UC4
+
+a -- UC5
+a -- UC6
+
+u <|- a
+
+@enduml
