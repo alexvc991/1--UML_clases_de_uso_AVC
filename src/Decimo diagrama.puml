@@ -1,0 +1,21 @@
+@startuml
+
+usecase UC1 #palegreen;line:green; as " **Sacar dinero**
+--
++solicitud hecha"
+
+usecase #palegreen;line:green; UC2 as " **Retener tarjeta** "
+
+UC1 <-- UC2 #green;line.dotted; : <<Extend>>
+
+note top of link #lightyellow;line:black;
+Description
+--
+condición:
+    {historia sospechosa }
+punto de extensión:
+    solicitud hecha
+end note
+
+
+@enduml
