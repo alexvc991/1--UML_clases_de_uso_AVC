@@ -10,6 +10,6 @@ left to right direction
 
 c -- UC1
 cv -- UC2
-c <- cv
+c <|- cv
 
 @enduml
