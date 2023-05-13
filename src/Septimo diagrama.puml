@@ -1,0 +1,24 @@
+@startuml
+
+left to right direction
+
+:new Actor: as a
+
+(Identificarse) as UC1
+(Pagar) as UC2
+(Elegir mensajero) as UC3
+(Confirmar) as UC4
+(Registrarse) as UC5
+(Pagar con tarjeta) as UC6
+(Pagar con transferencia) as UC7
+
+a -- UC1
+a -- UC2
+a -- UC3
+a -- UC4
+
+UC1 <.. UC5 : <<extend>>
+UC2 <-- UC6
+UC2 <-- UC7
+
+@enduml
