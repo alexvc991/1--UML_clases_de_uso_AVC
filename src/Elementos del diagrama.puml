@@ -1,5 +1,7 @@
 @startuml
 
+left to right direction
+
 :Cliente: as c
 :Restaurante: as r
 
