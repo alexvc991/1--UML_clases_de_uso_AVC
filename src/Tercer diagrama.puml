@@ -1,0 +1,10 @@
+@startuml
+
+left to right direction
+
+(Acceder) as UC1
+(Registrarse) as UC2
+
+UC1 <.. UC2 : <<extend>>
+
+@enduml
