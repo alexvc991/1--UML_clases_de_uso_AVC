@@ -1,0 +1,15 @@
+@startuml
+
+left to right direction
+
+:Cliente: as c
+:Cliente VIP: as cv
+
+(Reservar vuelo) as UC1
+(Elegir asientos) as UC2
+
+c -- UC1
+cv -- UC2
+c <- cv
+
+@enduml
