@@ -1,0 +1,18 @@
+@startuml
+
+left to right direction
+
+:Ciudadano: as c
+:Ciudadano extranjero: as ce
+
+(Registrar entrada) as UC1
+(Tomar huellas) as UC2
+
+c <|- ce
+
+c-- UC1
+ce -- UC2
+
+UC1 <. UC2 : <<extend>>
+
+@enduml
